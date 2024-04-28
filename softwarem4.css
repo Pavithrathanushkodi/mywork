@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: "sans-serif";
+    src: url(assets/fonts/DMSans-VariableFont_opsz,wght.ttf);
+}
+
+:root{
+--font-regular:sans-serif;
+--white:white;
+--grey:grey;
+--777777:#777777;
+--f7d9c4:#f7d9c4;
+--acliblue:aliceblue;
+--orange:orange;
+--black:black;
+--EFEFEF:#EFEFEF;
+}
+
+body{
+    background-color: var(--EFEFEF)!important;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    gap:60px;
+    margin-top: 40px;
+    padding:96px 0px 16px;
+}
+.banner-img img{
+    border-style: none;
+    border-radius: 10px;
+    width: 100%;
+    height:571px;
+    padding-right: 16px;
+}
+.banner-content{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap:20px;
+    
+    padding-right: 16px !important;
+    
+}
+.banner-content h6{
+color:var(--777777);
+font-size: 17.6px;
+font-family: var(--font-regular);
+
+}
+.banner-content h1{
+    font-size: 60.8px;
+    font-family: var(--font-regular);
+
+}
+.banner-content p{
+    color:var(grey);
+    font-family: var(--font-regular);
+
+    font-size: 17px;
+    padding:0px;
+}
+.banner-content button{
+    padding:16px 40px;
+    margin: 10px;
+    background-color: var(--f7d9c4);
+    font-family: var(--font-regular);
+
+    font-size: 16px;
+    border-style:none;
+    border-color:var(--f7d9c4) ;
+    border-radius: 4px;
+}
+.banner-content button:hover {
+    padding-right: 25px;
+    background-color: var(--white)
+  }
+  
+.main-card{
+    display: flex !important;
+    
+    gap:20px;
+    
+}
+.card{
+    border-style: none;
+    border-radius:10px;
+    border-color: var(--aliceblue) !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-body{
+    height:110px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .icon{
+    font-size: 20px;
+    font-weight: strong;
+    color:var(--orange);
+}
+.card-body h6{
+    font-weight: bold;
+    color: var(--black);
+    font-family: var(--font-regular);
+    font-size: 16px;
+}
+@media only screen and (max-width:991px){
+    .banner-img img{
+        width:100%;
+        height:410px;
+    }
+    .banner-content{
+        padding:60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center !important;
+    }
+
+    .main-card{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+}
+@media (min-width:991px) and (max-width:1200px){
+    .banner{
+        padding-left: 10px;
+    }
+    }
